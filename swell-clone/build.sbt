@@ -8,5 +8,11 @@ lazy val root = project
 
     scalaVersion := scala3Version,
 
-    libraryDependencies ++= Seq("org.scalameta" %% "munit" % "0.7.29" % Test, "io.d11" %% "zhttp" % "2.0.0-RC10")
+    libraryDependencies ++= Seq(
+      "org.scalameta" %% "munit" % "0.7.29" % Test,
+      "io.d11" %% "zhttp" % "2.0.0-RC10",
+      "io.getquill" %% "quill-jdbc-zio" % "4.1.0-V2",
+      "org.postgresql" % "postgresql" % "42.3.6",
+      "dev.zio" %% "zio-json" % "0.3.0-RC10"
+    )
   )
